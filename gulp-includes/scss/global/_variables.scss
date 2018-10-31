@@ -10,8 +10,9 @@ $random: random(99999999999);
 
 $desktop-medium: 1240px;
 $desktop-small: 1024px;
+$tablet-large: 991px;
 $tablet-medium: 768px;
-$tablet-small: 480px;
+$mobile-large: 480px;
 
 //============================================================
 // Typography
@@ -24,7 +25,8 @@ $font-1: 'Montserrat';
 //============================================================
 
 $textcolor-1: #000;
-
+$dark: #000;
+$white: #fff;
 $facebook-color: #3d5b99;
 $twitter-color: #1ea1f1;
 $youtube-color: #ff0000;

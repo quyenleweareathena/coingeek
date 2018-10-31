@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
 .clearfix {
   @include clearfix;
 }
@@ -26,27 +27,27 @@
 }
 
 .cg__week{
-  background: linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+  @include cg__week;
 }
 
 .cg__hardware{
-  background-color: #000000;
+  @include cg__hardware;
 }
 
 .cg__news{
-  background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+  @include cg__news;
 }
 
 .cg__business{
-  background: linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+  @include cg__business;
 }
 
 .cg__mining{
-  background: linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  @include cg__mining;
 }
 
 .cg__invests{
-  background: linear-gradient(135deg, #575294 0%, #1D1D1D 100%);
+  @include cg__invests;
 }
 
 .title__section{
@@ -62,4 +63,64 @@
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 22px;
+}
+
+[class*='col-'] {
+  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  // margin-bottom: $value-1;
+  @include clearfix;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $mobile-large) {
+    float: left;
+
+    &:last-child {
+      // margin-bottom: $value-1;
+    }
+  }
+
+}
+
+@for $i from 1 through 12 {
+  .col-always-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+@media screen and (min-width: $mobile-large) {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile-large) {
+  @for $i from 1 through 12 {
+    .col-offset-#{$i} {
+      margin-left: 100% / 12 * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile-large) {
+  @for $i from 1 through 12 {
+    .grid-col-#{$i} {
+      width: 100% / 12 * $i;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-large) {
+  @for $i from 1 through 12 {
+    .grid-col-offset-#{$i} {
+      margin-left: 100% / 12 * $i;
+    }
+  }
 }

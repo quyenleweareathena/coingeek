@@ -1,0 +1,94 @@
+.header{
+  &__menu{
+    width: calc(100% - 85px);
+    ul{
+      li{
+        display: inline-block;
+        a{
+          font-size: 10px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          line-height: 13px;
+          text-align: center;
+          text-transform: uppercase;
+          position: relative;
+          padding:0 10px;
+          margin:0 10px;
+          &:before{
+            content:"";
+            height:4px;
+            position: absolute;
+            margin:0 auto;
+            bottom:-17px;
+            left:0;
+          }
+          &:hover{
+            font-weight: 600;
+            &:before{
+              width:100%;
+            }
+            &+.sub__menu{
+              display: block;
+            }
+          }
+        }
+        &.news{
+          a:hover{
+            &:before{
+              @include cg__news;
+            }
+          }
+        }
+        &.conferences{
+          a:hover{
+            &:before{
+              @include cg__week;
+            }
+          }
+        }
+        &.hardware{
+          a:hover{
+            &:before{
+              background: $white;
+            }
+          }
+        }
+        &.investments{
+          a:hover{
+            &:before{
+              @include cg__invests;
+            }
+          }
+        }
+        &.mining{
+          a:hover{
+            &:before{
+              @include cg__mining;
+            }
+          }
+        }
+        &.businees__solutions{
+          a:hover{
+            &:before{
+              @include cg__business;
+            }
+          }
+        }
+      }
+    }
+    .sub__menu{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      bottom: -35px;
+      display: none;
+      li{
+        display: inline-block;
+        a{
+          color:$textcolor-1;
+        }
+      }
+    }
+  }
+}
