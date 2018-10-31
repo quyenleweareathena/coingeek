@@ -1,0 +1,33 @@
+#header{
+  padding: 15px 0;
+  background: $dark;
+  color: $white;
+  .header
+  {
+    &__container{
+      @include display_flex;
+      position: relative;
+    }
+    &__social{
+      width: 85px;
+      color:$white;
+      ul{
+        text-align: right;
+        li{
+          display: inline-block;
+          a{
+            font-size: 13px;
+            padding:0 7px;
+          }
+        }
+      }
+    }
+  }
+  .logo{
+    max-width: 120px;
+    position: absolute;
+    width:100%;
+    left:-100px;
+    top:0;
+  }
+}

@@ -41,8 +41,34 @@ input {
   white-space: nowrap;
 }
 
-/*
-p {
-  @include text-ellipsis;
+@mixin display_flex{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
 }
-*/
+
+@mixin cg__week{
+  background: linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+}
+
+@mixin cg__hardware{
+  background-color: #000000;
+}
+
+@mixin cg__news{
+  background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+}
+
+@mixin cg__business{
+  background: linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+}
+
+@mixin cg__mining{
+  background: linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+}
+
+@mixin cg__invests{
+  background: linear-gradient(135deg, #575294 0%, #1D1D1D 100%);
+}

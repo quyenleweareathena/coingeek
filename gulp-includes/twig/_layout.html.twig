@@ -142,7 +142,11 @@
         {% block header %}
             <header id="header">
                 <div class="wrapper">
-                    {% include 'components/_logos.twig' %}
+                    <div class="header__container">
+                        {% include 'components/_logos.twig' %}
+                        {% include 'includes/_big_menu.twig' %}
+                        {% include 'includes/_header_social.twig' %}
+                    </div>
                 </div>
             </header>
         {% endblock %}
