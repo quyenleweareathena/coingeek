@@ -1,0 +1,70 @@
+<div class="home__section_content white news__wrapper">
+    <div class="wrapper">
+        <div class="metting__section">
+            <div class="title">
+                <h2 class="title__section">Where we’ll be next</h2>
+                <a href="">All our events</a>
+            </div>
+            <div class="metting__section--content">
+                <div class="row">
+                    {% for i in 0..3 %}
+                        {% include '../components/_metting_item.twig' with {'col': 3} %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="bicoin__section">
+            <div class="title">
+                <h2 class="title__section">Bitcoin Cash</h2>
+                <a href="">All Bitcoin Cash Articles</a>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="business__container">
+                        <div class="row">
+                            {% for i in 0..1 %}
+                                {% include "../components/_news.twig" with {'col': 6} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <div class="row">
+                            {% for i in 0..3 %}
+                                {% include "../components/_news.twig" with {'col': 12} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video__section">
+            <div class="title">
+                <h2 class="title__section">Videos</h2>
+                <a href="">All Bitcoin Cash Articles</a>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="business__container">
+                        <div class="row">
+                            {% for i in 0..1 %}
+                                {% include "../components/_news.twig" with {'col': 6} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <div class="row">
+                            {% for i in 0..3 %}
+                                {% include "../components/_news.twig" with {'col': 12} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,27 +1,58 @@
-<div class="wrapper">
-    <div class="row">
-        <div class="latest-new-left col-9">
-            <h2 class="title__section">lastest news</h2>
+<div class="home__section_content white news__wrapper">
+    <div class="wrapper">
+        <div class="news__section">
             <div class="row">
-                {% for i in 0..2 %}
-                    {% include "../components/_news.twig" %}
-                {% endfor %}
-            </div>
-
-        </div>
-        <div class="latest-new-right col-3">
-            <div class="include-rigister cg__radius">
-                <p class="title"><span>CG</span> week</p>
-                <p class="description">Coingeek Week
-                    Conference</p>
-                <p class="date">London - May 2019</p>
-                <div class="button-discover">
-                    <a href="#">Discover Coingeek Week</a>
+                <div class="latest__new--left col-9">
+                    <h2 class="title__section">lastest news</h2>
+                    <div class="row">
+                        {% for i in 0..2 %}
+                            {% include "../components/_news.twig" with {'col': 4} %}
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="button-register now">
-                    <a href="#">Pre-Register now</a>
+                <div class="latest__new--right col-3">
+                    <div class="include-rigister cg__radius">
+                        <p class="title"><span>CG</span> week</p>
+                        <p class="description">Coingeek Week
+                            Conference</p>
+                        <p class="date">London - May 2019</p>
+                        <div class="button-discover">
+                            <a href="#">Discover Coingeek Week</a>
+                        </div>
+                        <div class="button-register now">
+                            <a href="#">Pre-Register now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="business__section">
+            <div class="title">
+                <h2 class="title__section">Business</h2>
+                <a href="">All Business Articles</a>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="business__container">
+                        <div class="row">
+                            {% for i in 0..1 %}
+                                {% include "../components/_news.twig" with {'col': 6} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <div class="row">
+                            {% for i in 0..3 %}
+                                {% include "../components/_news.twig" with {'col': 12} %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         {% include "../components/_mask.twig" %}
     </div>
 </div>
+
