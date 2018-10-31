@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+.clearfix {
+  @include clearfix;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  @media screen and (min-width: $desktop-medium + 1) {
+    max-width: $desktop-medium - 60;
+  }
+  @media screen and (max-width: $desktop-medium) {
+    padding: 0 30px;
+  }
+  @media screen and (max-width: $tablet-medium) {
+    padding: 0 15px;
+  }
+}
+
+#main-content {
+  position: relative;
+}
+
+.cg__radius{
+  border-radius: 0 10px 0 10px;
+}
+
+.cg__week{
+  background: linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+}
+
+.cg__hardware{
+  background-color: #000000;
+}
+
+.cg__news{
+  background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+}
+
+.cg__business{
+  background: linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+}
+
+.cg__mining{
+  background: linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+}
+
+.cg__invests{
+  background: linear-gradient(135deg, #575294 0%, #1D1D1D 100%);
+}
+
+.title__section{
+  color: $textcolor-1;
+  font-size: 14px;
+  letter-spacing: 0.88px;
+  line-height: 18px;
+}
+
+.title__new{
+  color: $textcolor-1;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22px;
+}

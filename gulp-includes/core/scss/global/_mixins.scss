@@ -1,0 +1,48 @@
+//============================================================
+// Forms
+//============================================================
+
+@mixin placeholder {
+  @at-root #{&}::-webkit-input-placeholder {
+    @content
+  }
+  @at-root #{&}:-moz-placeholder {
+    @content
+  }
+  @at-root #{&}::-moz-placeholder {
+    @content
+  }
+  @at-root #{&}:-ms-input-placeholder {
+    @content
+  }
+  @at-root #{&}:placeholder-shown {
+    @content
+  }
+  @at-root #{&}::placeholder {
+    @content
+  }
+}
+
+/*
+input {
+  @include placeholder {
+    font-style:italic;
+  }
+}
+*/
+
+//============================================================
+// Typography
+//============================================================
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+p {
+  @include text-ellipsis;
+}
+*/
