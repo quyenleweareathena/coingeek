@@ -87,6 +87,12 @@
 
 }
 
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
 @for $i from 1 through 12 {
   .col-always-#{$i} {
     width: 100% / 12 * $i;
