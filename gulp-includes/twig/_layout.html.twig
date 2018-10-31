@@ -153,14 +153,14 @@
         {% block main %}
             {% block pre_content %}{% endblock %}
             <main id="main-content">
-                <div class="wrapper clearfix">
-                    {% block content %}{% endblock %}
-                </div>
+                {% block content %}{% endblock %}
             </main>
             {% block post_content %}{% endblock %}
         {% endblock %}
         {% block footer %}
-            <footer id="footer"></footer>
+            <footer id="footer">
+                {% include "includes/_footer.twig" %}
+            </footer>
         {% endblock %}
         {% block javascripts %}
             {% for js_file in js_files %}

@@ -1,0 +1,20 @@
+.slider{
+  &__item{
+    position: relative;
+    @include clearfix;
+    height: 100%;
+    &--content{
+      max-width: calc((100% / 12)*5 + 30px);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: $white;
+      padding: 30px 120px 30px 30px;
+    }
+    &--image{
+      width: 100%;
+      max-width: calc((100% / 12)*7);
+      float:right;
+    }
+  }
+}

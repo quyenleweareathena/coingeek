@@ -1,9 +1,10 @@
 .header{
   &__menu{
     width: calc(100% - 85px);
-    ul{
-      li{
+    &>ul{
+      &>li{
         display: inline-block;
+        padding-bottom: 15px;
         a{
           font-size: 10px;
           font-weight: 300;
@@ -22,56 +23,68 @@
             bottom:-17px;
             left:0;
           }
-          &:hover{
-            font-weight: 600;
-            &:before{
-              width:100%;
-            }
-            &+.sub__menu{
-              display: block;
-            }
-          }
         }
         &.news{
-          a:hover{
-            &:before{
-              @include cg__news;
+          &:hover{
+            a{
+              &:before {
+                @include cg__news;
+              }
             }
           }
         }
         &.conferences{
-          a:hover{
-            &:before{
-              @include cg__week;
+          &:hover{
+            a{
+              &:before {
+                @include cg__week;
+              }
             }
           }
         }
         &.hardware{
-          a:hover{
-            &:before{
-              background: $white;
+          &:hover{
+            a{
+              &:before {
+                background: $white;
+              }
             }
           }
         }
         &.investments{
-          a:hover{
-            &:before{
-              @include cg__invests;
+          &:hover{
+            a{
+              &:before {
+                @include cg__invests;
+              }
             }
           }
         }
         &.mining{
-          a:hover{
-            &:before{
-              @include cg__mining;
+          &:hover{
+            a{
+              &:before{
+                @include cg__mining;
+              }
             }
           }
         }
         &.businees__solutions{
-          a:hover{
-            &:before{
+          &:hover{
+            a::before{
               @include cg__business;
             }
+          }
+        }
+        &:hover {
+          a{
+            font-weight: 600;
+            &:before {
+              width: 100%;
+            }
+          }
+          .sub__menu {
+            display: block;
           }
         }
       }
@@ -81,10 +94,12 @@
       left: 0;
       width: 100%;
       background: #fff;
-      bottom: -35px;
+      bottom: -40px;
       display: none;
+      border-radius: 0 10px 0 10px;
       li{
         display: inline-block;
+        padding:10px 0;
         a{
           color:$textcolor-1;
         }
