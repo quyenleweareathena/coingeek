@@ -20,6 +20,7 @@
 
 #main-content {
   position: relative;
+  background: $bg-main;
 }
 
 .cg__radius{
@@ -63,6 +64,11 @@
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 22px;
+}
+
+.row{
+  @include clearfix;
+  margin:0 -15px;
 }
 
 [class*='col-'] {

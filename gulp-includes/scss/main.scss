@@ -25,7 +25,7 @@ $auto_base64_node_modules_css_weight_limit: 5;
 @import '../core/scss/global/normalize';
 
 //slick.scss
-//@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
 
 //magnific-popup.css
 //@import '../../node_modules/magnific-popup/dist/magnific-popup';
@@ -35,6 +35,7 @@ $auto_base64_node_modules_css_weight_limit: 5;
 
 @import 'blocks/**/*.scss';
 @import 'templates/**/*.scss';
+@import 'components/**/*.scss';
 
 /*
  /!\ REMINDER /!\

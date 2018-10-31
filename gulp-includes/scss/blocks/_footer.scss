@@ -1,0 +1,36 @@
+#footer{
+  background: $dark;
+  color: $white;
+  padding: 40px 0;
+  .footer{
+    &__logo{
+      width: 150px;
+      order: 2;
+      margin: 0 20px;
+    }
+    &__top{
+      @include display_flex;
+      align-items: center;
+      .footer__menu{
+        width: calc((100% - 190px / 2));
+        ul{
+          @include display_flex;
+          justify-content: space-around;
+          li{
+            display: inline-block;
+            a{
+              font-size: 10px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .left{
+        order: 1;
+      }
+      .right{
+        order: 3;
+      }
+    }
+  }
+}
