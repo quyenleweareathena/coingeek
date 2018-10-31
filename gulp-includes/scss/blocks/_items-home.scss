@@ -1,55 +1,51 @@
-.latest-new-left{
-	.lable{
-		margin-bottom: 20px;
-		p{
-			color: #000000;
-			font-family: Montserrat;
-			font-size: 14px;
-			letter-spacing: 0.88px;	
-			line-height: 18px;
-			border-bottom: 1px solid #F5F5F5;
-    		padding-bottom: 10px;
-    		text-transform: uppercase;
-		}
+.new{
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  .title__new{
+	margin-bottom: 10px;
+  }
+  .image{
+	img{
+	  width: 100%;
 	}
+  }
 }
-.item{
-	.bitcoin-title{
-		margin-top: 20px;
-    	margin-bottom: 15px;
-    	position: relative;
-    	padding-left: 5px;
-    	&:before{
-    		content: '';
-    		left: 0;
-    		left: -5px;
-		    width: 2px;
-		    height: 13px;
-		    display: block;
-		    position: absolute;
-		    transform: translateY(-50%);
-		    top: 50%;
-		    background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
-    	}
-		.title{
-			color: #000000;
-		    font-family: Montserrat;
-		    font-size: 10px;
-		    font-weight: 200;
-		    letter-spacing: 1px;
-		    line-height: 13px;
-		    text-transform: uppercase;
-		}
-		.date{
-			color: #4A90E2;
-		    font-family: Montserrat;
-		    font-size: 10px;
-		    font-weight: 300;
-		    letter-spacing: 1px;
-		    line-height: 13px;
-		}
+.new__info{
+  margin:10px 0;
+  font-size: 10px;
+  &--title{
+	color: #000000;
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height: 13px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	padding-left: 10px;
+	&:before{
+	  content: '';
+	  left: 0;
+	  width: 2px;
+	  height: 13px;
+	  display: block;
+	  position: absolute;
+	  top: 50%;
+	  background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+	  transform: translateY(-50%);
 	}
+  }
+  &--date{
+	color: #4A90E2;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 13px;
+	margin-left: 10px;
+	text-transform: uppercase;
+  }
 }
+
 .include-rigister{
 	padding: 40px 0px 30px 0px;
 	background: linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
