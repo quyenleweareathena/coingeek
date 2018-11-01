@@ -30,10 +30,17 @@ var coingeek = (function ($, window, undefined) {
         }
     }
 
+    function _add_class_active(){
+        $(".select2-results__option").click(function(){
+            alert(1111111111);
+        })  
+    }
+
     return {
         init: function () {
             _select2_location();
             _select2_type();
+            _add_class_active();
             
         }
     };
