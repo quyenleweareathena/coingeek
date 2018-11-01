@@ -1,0 +1,36 @@
+.include__sugget--event{
+	padding: 40px 0px 50px 85px;
+	.row{
+		display: flex;
+    	align-items: center;
+	}
+	background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+	.title__suggest{
+		color: $white;	
+		font-size: 16px;	
+		font-weight: 600;	
+		letter-spacing: 1px;	
+		line-height: 22px;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+	}
+	p{
+		color: $white;	
+		font-size: 13px;	
+		line-height: 16px;
+	}
+	.botton{
+		padding-left: 75px;
+		a{
+			color: $dark;
+		    font-size: 10px;
+		    font-weight: 300;
+		    letter-spacing: 1px;
+		    line-height: 12px;
+		    text-align: center;
+		    background: white;
+		    padding: 18px 89px;
+		    border-radius: 30px;
+		}
+	} 
+}

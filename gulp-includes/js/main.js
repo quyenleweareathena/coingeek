@@ -10,6 +10,7 @@ const config = {
     /* Most likely node_modules or includes stuffs */
     src : [
          'node_modules/slick-carousel/slick/slick.js',
+         'node_modules/select2/dist/js/select2.min.js',
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'gulp-includes/js/includes/**/*.js'
     ],
