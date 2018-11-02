@@ -16,10 +16,11 @@
         if (slider.length > 0) {
             slider.not('.slick-initialized').slick(
                 {
-                    dot: true,
+                    dots: true,
                     arrows: false,
                     autoplaySpeed: 5000,
                     autoplay: true,
+                    fade: true,
                     slidesToShow: 1
                 }
             );

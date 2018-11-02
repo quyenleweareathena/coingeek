@@ -1,0 +1,23 @@
+.home__section_content {
+  .lists__coingeek--week{
+    .new{
+      padding:20px;
+      position: relative;
+      &__content{
+        width: 100%;
+        position: relative;
+      }
+      &:before{
+        content:"";
+        background: #fff;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        @include cg__radius;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

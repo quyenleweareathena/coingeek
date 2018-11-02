@@ -1,7 +1,8 @@
 .header{
   &__menu{
-    width: calc(100% - 85px);
+    width: calc(100% - 85px - 220px);
     &>ul{
+      padding-left: 60px;
       &>li{
         display: inline-block;
         padding-bottom: 15px;
@@ -26,7 +27,7 @@
         }
         &.news{
           &:hover{
-            a{
+            &>a{
               &:before {
                 @include cg__news;
               }
@@ -35,7 +36,7 @@
         }
         &.conferences{
           &:hover{
-            a{
+            &>a{
               &:before {
                 @include cg__week;
               }
@@ -44,7 +45,7 @@
         }
         &.hardware{
           &:hover{
-            a{
+            &>a{
               &:before {
                 background: $white;
               }
@@ -53,7 +54,7 @@
         }
         &.investments{
           &:hover{
-            a{
+            &>a{
               &:before {
                 @include cg__invests;
               }
@@ -62,7 +63,7 @@
         }
         &.mining{
           &:hover{
-            a{
+            &>a{
               &:before{
                 @include cg__mining;
               }
@@ -83,25 +84,74 @@
               width: 100%;
             }
           }
-          .sub__menu {
+          &>ul {
             display: block;
           }
         }
-      }
-    }
-    .sub__menu{
-      position: absolute;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      bottom: -40px;
-      display: none;
-      border-radius: 0 10px 0 10px;
-      li{
-        display: inline-block;
-        padding:10px 0;
-        a{
-          color:$textcolor-1;
+        &>ul{
+          position: absolute;
+          left: 0;
+          width: 100%;
+          background: #fff;
+          bottom: -40px;
+          display: none;
+          padding-left: 30px;
+          @include cg__radius;
+          &>li{
+            display: inline-block;
+            padding:10px 0;
+            position: relative;
+            &>a{
+              color:$textcolor-1;
+              &:before{
+                content:"";
+                height:2px;
+                position: absolute;
+                margin:0 auto;
+                bottom:-12px;
+                left:0;
+              }
+            }
+            ul{
+              position: absolute;
+              width: 280px;
+              color: $dark;
+              top: 40px;
+              border-top: 10px solid transparent;
+              display: none;
+              padding-left: 0;
+              @include cg__radius;
+              li{
+                display: block;
+                padding:15px;
+                background: $white;
+                transition: background .5s ease;
+                padding-left: 0;
+                &:hover{
+                  @include cg__news;
+                  a{
+                    color: $white;
+                  }
+                }
+                &:first-child{
+                  border-top-right-radius: 10px;
+                }
+                &:last-child{
+                  border-bottom-left-radius: 10px;
+                }
+              }
+            }
+            &:hover{
+              &>a{
+                &:before{
+                  background: $dark;
+                }
+              }
+              ul{
+                display: block;
+              }
+            }
+          }
         }
       }
     }

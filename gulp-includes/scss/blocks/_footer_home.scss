@@ -69,12 +69,12 @@
     form{
       input{
         border-radius: 20px;
-        &[type="text"]{
+        &[type="email"]{
           width: calc(100% - 130px - 15px);
           margin-right: 10px;
           height:36px;
           line-height: 36px;
-          background: $bg-main;
+          background: rgb(238, 236, 237);
           padding-left: 15px;
           font-size: 12px;
           font-weight: 200;

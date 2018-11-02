@@ -21,10 +21,11 @@
 #main-content {
   position: relative;
   background: $bg-main;
+  padding-top: 50px;
 }
 
 .cg__radius{
-  border-radius: 0 10px 0 10px;
+  @include cg__radius;
 }
 
 .cg__week{

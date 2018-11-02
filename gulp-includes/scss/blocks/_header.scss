@@ -2,8 +2,9 @@
   padding: 15px 0 0;
   background: $dark;
   color: $white;
-  position: relative;
   z-index: 1;
+  position: fixed;
+  width:100%;
   .header
   {
     &__container{
@@ -24,12 +25,24 @@
         }
       }
     }
+    &__search{
+      width: 220px;
+      background: rgba($white, 0.2);
+      height:30px;
+      margin-top: -5px;
+      @include cg__radius;
+      padding-left: 10px;
+      input[type="text"]{
+        height: 30px;
+        line-height: 30px;
+      }
+    }
   }
   .logo{
     max-width: 120px;
     position: absolute;
     width:100%;
-    left:-100px;
+    left:-90px;
     top:0;
   }
 }

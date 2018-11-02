@@ -13,16 +13,16 @@
                     </div>
                 </div>
                 <div class="latest__new--right col-6">
-                    <div class="include-rigister cg__radius">
-                        <p class="title"><span>CG</span> week</p>
-                        <p class="description">Coingeek Week
-                            Conference</p>
-                        <p class="date">London - May 2019</p>
-                        <div class="button-discover">
-                            <a href="#">Discover Coingeek Week</a>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="lists__coingeek--week">
+                                {% for i in 0..1 %}
+                                    {% include "../components/_coingeek-week-item-list.twig" %}
+                                {% endfor %}
+                            </div>
                         </div>
-                        <div class="button-register now">
-                            <a href="#">Pre-Register now</a>
+                        <div class="col-6">
+
                         </div>
                     </div>
                 </div>

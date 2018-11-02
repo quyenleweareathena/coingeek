@@ -49,8 +49,16 @@ input {
   display: flex;
 }
 
+@mixin cg__radius{
+  border-radius: 0 10px 0 10px;
+}
+
 @mixin cg__week{
   background: linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+  background: -webkit-linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+  background: -moz-linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+  background: -o-linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
+  background: -ms-linear-gradient(135deg, #FAC161 0%, #F7961C 100%);
 }
 
 @mixin cg__hardware{
@@ -59,16 +67,32 @@ input {
 
 @mixin cg__news{
   background: linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+  background: -webkit-linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+  background: -moz-linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+  background: -o-linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
+  background: -ms-linear-gradient(315deg, #00D2FF 0%, #0074FC 100%);
 }
 
 @mixin cg__business{
   background: linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+  background: -webkit-linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+  background: -moz-linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+  background: -o-linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
+  background: -ms-linear-gradient(135deg, #CB20C8 0%, #FF022E 100%);
 }
 
 @mixin cg__mining{
   background: linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -webkit-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -moz-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -o-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -ms-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
 }
 
 @mixin cg__invests{
   background: linear-gradient(135deg, #575294 0%, #1D1D1D 100%);
+  background: -webkit-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -moz-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -o-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
+  background: -ms-linear-gradient(314.96deg, #007B7D 0%, #4CC947 100%);
 }

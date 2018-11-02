@@ -2,14 +2,33 @@
   font-size: 13px;
   font-weight: 200;
   line-height: 20px;
+  position: relative;
+  overflow: hidden;
   .title__new{
 	margin-bottom: 10px;
   }
   .image{
+	overflow: hidden;
 	img{
+	  transition: all .5s ease;
 	  width: 100%;
 	}
   }
+  &>a{
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+  }
+  &:hover{
+	.image{
+	  img{
+		transform: scale(1.1);
+	  }
+	}
+  }
+
 }
 .new__info{
   margin:10px 0;

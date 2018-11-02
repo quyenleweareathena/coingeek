@@ -6,6 +6,14 @@
       font-weight: 600;
       margin-bottom: 10px;
       line-height: 30px;
+      background: linear-gradient(135deg, #0074FC 0%, #00D2FF 100%);
+      background: -moz-linear-gradient(135deg, #0074FC 0%, #00D2FF 100%);
+      background: -o-linear-gradient(135deg, #0074FC 0%, #00D2FF 100%);
+      background: -ms-linear-gradient(135deg, #0074FC 0%, #00D2FF 100%);
+      background: -webkit-linear-gradient(315deg, #0074FC 0%, #00D2FF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   &__date{
